@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="SPARK.View.EditUserView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SPARK.View"
+    xmlns:viewmodel="using:SPARK.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--Page resources sadrzi reusable resurse, kokretno ovdje se koristi kao template za izgled jednog reda u ListView kontroli-->
+
+    <Grid Background="#0280B0" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="110*" />
+            <RowDefinition Height="15*" />
+            <RowDefinition Height="20*" />
+        </Grid.RowDefinitions>
+        <Border Background="#0081AF" Grid.Row="0" ></Border>
+        <Grid Name="Grid123" Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Border BorderBrush="#1F97BF" BorderThickness="0" Background="#1F97BF"   Grid.Column="0" Grid.Row="0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" >ODABIR VRSTE RAČUNA</TextBlock>
+            </Border>
+            <Border BorderBrush="Red" BorderThickness="0" Background="#3DACCE"  Grid.Column="1" Grid.Row="0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">UNOS PODATAKA</TextBlock>
+            </Border>
+        </Grid>
+        <Grid Background="#FFFFFA" Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="8*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="1" Grid.Row="1" Name="TextBlockName"  Text="Name:"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="2" Name="TextBoxName" Text="{Binding Path=korisnik.Name}"></TextBox>
+            <TextBlock Grid.Column="1" Grid.Row="3" Name="TextBlockSurname" Text="Surname:"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="4" Name="TextBoxSurname" Text="{Binding Path=korisnik.Surname}"></TextBox>
+            <TextBlock Grid.Column="1" Grid.Row="5" Name="TextBlockUsername" Text="Username:"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="6" Name="TextBoxUsername" Text="{Binding Path=korisnik.Username}"/>
+            <TextBlock Grid.Column="1" Grid.Row="7" Name="TextBlockPassword" Text="Password:"></TextBlock>
+            <PasswordBox Grid.Column="1" Grid.Row="8" Name="TextBoxPassword" />
+            <TextBlock Grid.Column="1" Grid.Row="9" Name="TextBlockEmail" Text="e-mail:" ></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="10" Name="TextBoxEmail" Text="{Binding Path=korisnik.Email}" />
+
+        </Grid>
+
+        <Button Grid.Row="3" Name="SubmitButton"  Content="POTVRDI IZMJENE" Background="#F94E49" Foreground="White" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="SubmitButton_Click" />
+        <Border Background="#0081AF" Grid.Row="4" ></Border>
+
+    </Grid>
+</Page>

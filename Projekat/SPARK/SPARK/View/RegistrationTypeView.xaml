@@ -1,0 +1,73 @@
+﻿<Page
+    x:Class="SPARK.RegistrationTypeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SPARK"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="110*" />
+            <RowDefinition Height="15*" />
+            <RowDefinition Height="20*" />
+        </Grid.RowDefinitions>
+        <Border Background="#0081AF" Grid.Row="0" Grid.ColumnSpan="2"></Border>
+        <Grid Name="Grid123" Grid.Row="1" Grid.ColumnSpan="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Border BorderBrush="#1F97BF" BorderThickness="0" Background="#3DACCE"  Grid.Column="0" Grid.Row="0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" >ODABIR VRSTE RAČUNA</TextBlock>
+            </Border>
+            <Border BorderBrush="Red" BorderThickness="0" Background="#1F97BF"  Grid.Column="1" Grid.Row="0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">UNOS PODATAKA</TextBlock>
+            </Border>
+        </Grid>
+        <Grid Background="#FFFFFA" Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Viewbox Grid.Row="1" Grid.Column="1" Stretch="Uniform">
+                <TextBlock   HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#181C21">KORISNIK</TextBlock>
+            </Viewbox>
+            <RichTextBlock  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Foreground="#181C21">
+                <Paragraph>Napravite korisnički račun i koristite usluge SPARK aplikacije. Korisnici mogu tražiti i rezervisati parking.</Paragraph>
+            </RichTextBlock>
+            <RadioButton  Grid.Row="3" Grid.Column="1" Name="CreateUser"  HorizontalAlignment="Center" Foreground="#181C21">NAPRAVI KORISNIČKI RAČUN</RadioButton>
+            <Viewbox Grid.Row="1" Grid.Column="3" Stretch="Uniform">
+                <TextBlock HorizontalAlignment="Center" Foreground="#181C21">VLASNIK</TextBlock>
+            </Viewbox>
+            <RichTextBlock Grid.Row="2" Grid.Column="3"  HorizontalAlignment="Center" Foreground="#181C21" >
+                <Paragraph>Napravite vlasnički račun i koristite usluge SPARK aplikacije. Vlasnici mogu tražiti i rezervisati parking, ali i kreirati svoj parking, voditi evidenciju o profitu i zaraditi novac.</Paragraph>
+            </RichTextBlock>
+            <RadioButton Grid.Row="3" Grid.Column="3" Name="CreateOwner"  HorizontalAlignment="Center" Foreground="#181C21">NAPRAVI VLASNIČKI RAČUN</RadioButton>
+
+        </Grid>
+
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Name="RegistrationDetailsButton"  Content="UNESI PODATKE" HorizontalContentAlignment="Center" Background="#F94E49" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="RegistrationDetailsButton_Click"/>
+        <Border Background="#0081AF" Grid.Row="4" Grid.ColumnSpan="2"></Border>
+    </Grid>
+</Page>
