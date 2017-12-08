@@ -55,6 +55,5 @@ Vlasnik na svom računu, u obliku dnevnog izvještaja, raspolaže detaljnim info
 
 # Parking
 ![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot1.png)
-![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot2.png)
 ![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot3.png)
 ![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot4.png)
