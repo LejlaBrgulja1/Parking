@@ -1,6 +1,11 @@
 # SPARK
 **Traženje, rezervacija i plaćanje parking mjesta**
 
+
+![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot1.png)
+![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot3.png)
+![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot4.png)
+
 1. Lejla Brgulja
 2. Kerim Jamaković
 3. Hamza Zubača
@@ -54,6 +59,3 @@ Vlasnik na svom računu, u obliku dnevnog izvještaja, raspolaže detaljnim info
 
 
 # Parking
-![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot1.png)
-![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot3.png)
-![alt text](https://raw.githubusercontent.com/LejlaBrgulja1/Parking/master/screenshot4.png)
